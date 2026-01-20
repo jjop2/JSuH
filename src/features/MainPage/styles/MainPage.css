@@ -3,3 +3,11 @@
   justify-content: center;
   width: 100%;
 }
+
+.about_section {
+  background: linear-gradient(to bottom, var(--main-bg), var(--sub-color) 150%);
+}
+
+.skills_section {
+  background: var(--inv-bg);
+}

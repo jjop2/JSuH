@@ -1,0 +1,49 @@
+.skill_title {
+  display: flex;
+  justify-content: center;
+  color: var(--inv-text);
+}
+
+.skill_content {
+  margin-top: 50px;
+  border-top: 1px solid var(--sub-text);
+}
+
+.skill_row {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--sub-text);
+}
+
+.skill_label {
+  width: 180px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--inv-text);
+  border-right: 1px solid var(--sub-text);
+}
+
+.skill_items {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  gap: 10px;
+}
+
+.skill_tag {
+  display: inline-block;
+  padding: 6px 14px;
+  background-color: var(--main-bg);
+  color: var(--main-text);
+  border-radius: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.skill_tag:hover {
+  background-color: var(--main-color);
+  color: #ffffff;
+  transform: translateY(-2px);
+}

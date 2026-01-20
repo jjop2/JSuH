@@ -5,11 +5,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const About = ({ season }) => {
   return (
-    <div className="about max_w">
-      <div className="about_cont_wrap">
+    <div className="about w-max">
+      <div className="about_cont_wrap p-50">
         <div className="about_title">
-          <p className="title_block">안녕하세요,</p>
-          <p className="title_block">풀스택 & AI 개발자 장수현입니다</p>
+          <h4 className="title_block">안녕하세요,</h4>
+          <h4 className="title_block">풀스택 & AI 개발자 장수현입니다</h4>
         </div>
         <div className="about_description">
           <p className="desc_block">봄의 호기심으로 새로운 기술을 탐구하기 시작하고,</p>
