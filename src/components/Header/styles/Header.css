@@ -1,0 +1,67 @@
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 30px;
+  align-items: center;
+  color: var(--main-text);
+  border-bottom: 1px solid var(--sub-text);
+  height: 30px; /* 헤더 높이 설정 */
+}
+
+.home > a {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.home > a:hover {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--main-color);
+}
+
+.header_right_box {
+  display: flex;
+  gap: 60px;
+}
+
+.main_nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.main_nav > a {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.main_nav > a:hover {
+  color: var(--main-color);
+}
+
+.sub_nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.sub_nav_icon {
+  position: relative;
+  padding: 5px;
+}
+
+.sub_nav_icon > p {
+  font-size: 20px;
+}
+
+.sub_nav_icon > p:hover {
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.main_nav a,
+.sub_nav p,
+.sub_nav_icon {
+  -webkit-user-select: none;
+  user-select: none;
+}

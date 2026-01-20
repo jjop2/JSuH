@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 라이트 모드 공통 색상 */
+:root[data-mode='light'] {
+  --main-bg: #FFFFFF;
+  --main-text: #212529;
+  --sub-bg: #F8F9FA;
+  --sub-text: #6C757D;
+}
+
+/* 다크 모드 공통 색상 */
+:root[data-mode='dark'] {
+  --main-bg: #121212;
+  --main-text: #E9ECEF;
+  --sub-bg: #1E1E1E;
+  --sub-text: #ADB5BD;
+}
+
+/* 사계절 색상 */
+:root[data-season='spring'][data-mode='light'] {
+  --main-color: #6BCB77;
+  --sub-color: #FFB7C5;
+}
+:root[data-season='spring'][data-mode='dark'] {
+  --main-color: #81CF8B;
+  --sub-color: #FFCAD4;
+}
+
+:root[data-season='summer'][data-mode='light'] {
+  --main-color: #4D96FF;
+  --sub-color: #FFD93D;
+}
+:root[data-season='summer'][data-mode='dark'] {
+  --main-color: #6EB5FF;
+  --sub-color: #FFE162;
+}
+
+:root[data-season='autumn'][data-mode='light'] {
+  --main-color: #D35400;
+  --sub-color: #F39C12;
+}
+:root[data-season='autumn'][data-mode='dark'] {
+  --main-color: #E67E22;
+  --sub-color: #F1C40F;
+}
+
+:root[data-season='winter'][data-mode='light'] {
+  --main-color: #5D8BF4;
+  --sub-color: #A8BAC4;
+}
+:root[data-season='winter'][data-mode='dark'] {
+  --main-color: #89A9F9;
+  --sub-color: #CED4DA;
+}
+
+/* 폰트 설정 */
+:root[data-lang='ko'] {font-family: 'Inter', 'Pretendard', sans-serif}
+:root[data-lang='en'] {font-family: 'Inter', sans-serif}
+:root[data-lang='ja'] {font-family: 'Inter', 'Noto Sans JP', sans-serif}

@@ -1,0 +1,28 @@
+.theme {
+  position: absolute;
+  padding: 10px;
+  min-width: 200px;
+  z-index: 999;
+
+  background: pink;
+}
+
+.theme_wrap:first-of-type {
+  padding-bottom: 10px;
+}
+
+.theme_title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.theme_content {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.theme_content.mode > p {
+  
+  background: skyblue;
+}
