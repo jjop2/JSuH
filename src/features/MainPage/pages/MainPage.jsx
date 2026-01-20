@@ -2,6 +2,7 @@ import About from '../components/About';
 import Skills from '../components/Skills';
 import { UITEXTS } from '../../../utils/uiTexts';
 import '../styles/MainPage.css'
+import Projects from '../components/Projects';
 
 const MainPage = ({ lang, season }) => {
   const currentTexts = UITEXTS[lang];
@@ -15,6 +16,9 @@ const MainPage = ({ lang, season }) => {
       </div>
       <div className="page_section skills_section" id="skills">
         <Skills navList={navList} />
+      </div>
+      <div className="page_section projects_section" id="projects">
+        <Projects navList={navList} />
       </div>
     </div>
   );

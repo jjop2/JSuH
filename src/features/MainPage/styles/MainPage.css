@@ -11,3 +11,7 @@
 .skills_section {
   background: var(--inv-bg);
 }
+
+.projects_section {
+  background: var(--sub-color);
+}
