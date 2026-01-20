@@ -1,4 +1,11 @@
-.header {
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: var(--main-bg);
+}
+
+.header_container {
   display: flex;
   justify-content: space-evenly;
   padding: 20px 30px;

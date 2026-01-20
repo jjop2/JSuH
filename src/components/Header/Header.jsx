@@ -15,35 +15,37 @@ const Header = ({ lang='ko', setLang, setMode, setSeason }) => {
   const [isThemeOpen, setIsThemeOpen] = useState(false);
 
   return (
-    <div className="header">
-      <div className="header_left_box">
-        <div className="home">
-          <a href="/">JSuH</a>
-        </div>
-      </div>
-      <div className="header_right_box">
-        <div className="main_nav">
-          <a href="#about">{navList['about']}</a>
-          <a href="#skills">{navList['skills']}</a>
-          <a href="#projects">{navList['projects']}</a>
-          <a href="#certificates">{navList['certificates']}</a>
-        </div>
-        <div className="sub_nav">
-          <div className="sub_nav_icon">
-            <p onClick={() => setIsThemeOpen(!isThemeOpen)}>
-              <FontAwesomeIcon icon={faPalette} />
-            </p>
-            {isThemeOpen && <Theme themeList={themeList} setMode={setMode} setSeason={setSeason} />}
-          </div>
-          <div className="sub_nav_icon">
-            <p onClick={() => setIsLangOpen(!isLangOpen)}>
-              <FontAwesomeIcon icon={faGlobe} />
-            </p>
-            {isLangOpen && <Language />}
+    <header>
+      <div className="header_container">
+        <div className="header_left_box">
+          <div className="home">
+            <a href="/">JSuH</a>
           </div>
         </div>
+        <div className="header_right_box">
+          <div className="main_nav">
+            <a href="#about">{navList['about']}</a>
+            <a href="#skills">{navList['skills']}</a>
+            <a href="#projects">{navList['projects']}</a>
+            <a href="#certificates">{navList['certificates']}</a>
+          </div>
+          <div className="sub_nav">
+            <div className="sub_nav_icon">
+              <p onClick={() => setIsThemeOpen(!isThemeOpen)}>
+                <FontAwesomeIcon icon={faPalette} />
+              </p>
+              {isThemeOpen && <Theme themeList={themeList} setMode={setMode} setSeason={setSeason} />}
+            </div>
+            <div className="sub_nav_icon">
+              <p onClick={() => setIsLangOpen(!isLangOpen)}>
+                <FontAwesomeIcon icon={faGlobe} />
+              </p>
+              {isLangOpen && <Language />}
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </header>
   );
 };
 
