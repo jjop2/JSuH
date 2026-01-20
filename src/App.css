@@ -8,12 +8,18 @@ a {
   color: inherit;
 }
 
+.max_w {
+  max-width: 1024px;
+}
+
 /* 라이트 모드 공통 색상 */
 :root[data-mode='light'] {
   --main-bg: #FFFFFF;
   --main-text: #212529;
   --sub-bg: #F8F9FA;
   --sub-text: #6C757D;
+  --inv-bg: #121212;
+  --inv-text: #E9ECEF;
 }
 
 /* 다크 모드 공통 색상 */
@@ -22,6 +28,8 @@ a {
   --main-text: #E9ECEF;
   --sub-bg: #1E1E1E;
   --sub-text: #ADB5BD;
+  --inv-bg: #2A2A2A;
+  --inv-text: #FFFFFF;
 }
 
 /* 사계절 색상 */

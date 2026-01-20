@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css'
 import Header from './components/Header/Header'
+import MainPage from './features/MainPage/pages/MainPage';
 
 function App() {
   const [lang, setLang] = useState('ko');
@@ -14,6 +15,7 @@ function App() {
     root.setAttribute('data-lang', lang);
     root.setAttribute('data-mode', mode);
     root.setAttribute('data-season', season);
+    root.setAttribute('lang', lang);
   }, [lang, mode, season]);
 
   return (
@@ -23,6 +25,10 @@ function App() {
         setLang={setLang}
         setMode={setMode}
         setSeason={setSeason}
+      />
+      <MainPage
+        lang={lang}
+        season={season}
       />
       
     </div>

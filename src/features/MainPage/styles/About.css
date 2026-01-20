@@ -1,0 +1,52 @@
+.about {
+  display: flex;
+  gap: 60px;
+}
+
+.about_cont_wrap {
+  padding: 50px;
+}
+
+.about_title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.about_description {
+  word-break: keep-all;
+  line-height: 1.6;
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+
+.about_description > p:nth-child(2) {
+  padding-bottom: 10px;
+}
+
+.about_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.about_pic_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 350px;
+
+  background: var(--inv-bg);
+}
+
+.season_section {
+  padding: 30px 0;
+  color: var(--sub-color);
+  font-family: 'JetBrains Mono';
+}
+
+.picture_section {
+  color: var(--inv-text);
+}
