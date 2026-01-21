@@ -30,16 +30,17 @@
   gap: 10px;
 }
 
-.contact_block {
+.about .contact_block {
   font-weight: 500;
   font-size: 16px;
 }
 
-.contact_block.github {
+.about .contact_block {
+  width: fit-content;
   cursor: pointer;
 }
 
-.contact_block.github:hover {
+.about .contact_block:hover {
   color: var(--main-color);
 }
 

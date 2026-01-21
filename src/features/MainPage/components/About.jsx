@@ -23,11 +23,16 @@ const About = ({ season }) => {
           <a
             href={GITHUB_URL}
             target='_blank'
-            className="contact_block github"
+            className="contact_block"
           >
             <FontAwesomeIcon icon={faGithub} /> {GITHUB_URL}
           </a>
-          <p className="contact_block"><FontAwesomeIcon icon={faEnvelope} /> {EMAIL}</p>
+          <a
+            href={`mailto:${EMAIL}`}
+            className="contact_block"
+          >
+            <FontAwesomeIcon icon={faEnvelope} /> {EMAIL}
+          </a>
         </div>
       </div>
       <div className="about_pic_wrap">

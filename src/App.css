@@ -26,6 +26,7 @@ a {
   --inv-text: #E9ECEF;
 
   --inv-bg-rgb: 30, 30, 30;
+  --inv-text-rgb: 233, 236, 239;
 }
 
 /* 다크 모드 공통 색상 */
@@ -38,17 +39,18 @@ a {
   --inv-text: #FFFFFF;
 
   --inv-bg-rgb: 42, 42, 42;
+  --inv-text-rgb: 255, 255, 255;
 }
 
 /* 사계절 색상 */
 /* spring */
 :root[data-season='spring'][data-mode='light'] {
-  --main-color: #6BCB77; --main-rgb: 107, 203, 119;
+  --main-color: #62bd6e; --main-rgb: 98, 189, 110;
   --sub-color: #F2DADE;  --sub-rgb: 242, 218, 222;
 }
 :root[data-season='spring'][data-mode='dark'] {
   --main-color: #81CF8B; --main-rgb: 129, 207, 139;
-  --sub-color: #3D3537;  --sub-rgb: 61, 53, 55;
+  --sub-color: #473e41;  --sub-rgb: 61, 53, 55;
 }
 
 /* summer */
