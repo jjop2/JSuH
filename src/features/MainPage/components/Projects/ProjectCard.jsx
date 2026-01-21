@@ -19,6 +19,7 @@ const ProjectCard = ({ projectsData }) => {
       <div className="project_card" key={i}>
         <div className="project_info_section">
           <h2 className="project_name">{project.name}</h2>
+          <p className="project_description">{project.description}</p>
           <p className="project_date">{project.start_date} ~ {project.end_date}</p>
           <div className="project_tag_container">
             {project.tags.map((tag, i) => {

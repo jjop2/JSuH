@@ -9,9 +9,10 @@ const projectsData = [
   {
     id: 4,
     name: "S.P.I.D.E.R",
-    tags: ["Leader", "Frontend", "UI/UX", "IoT", "Backend"],
+    description: "설비 센서 데이터 · 제품 불량 검출 실시간 스트리밍 및 AI 기반 모니터링 시스템",
     start_date: "2025.12",
     end_date: "2026.01",
+    tags: ["Leader", "Frontend", "UI/UX", "IoT", "Backend"],
     roles: [
       "노션을 활용한 전체 일정 관리 및 회의록 기록, 가이드라인 작성",
       "Socket.io를 활용한 실시간 센서 데이터 스트리밍 구현",
@@ -49,9 +50,10 @@ const projectsData = [
   {
     id: 3,
     name: "Medi.Check!",
-    tags: ["AI", "Backend", "DB", "Frontend", "UI/UX"],
+    description: "AI 기반 의약품·영양제 상호작용 분석 및 관리 서비스",
     start_date: "2025.10",
     end_date: "2025.11",
+    tags: ["AI", "Backend", "DB", "Frontend", "UI/UX"],
     roles: [
       "YOLO를 통한 사진 속 의약품을 판별하는 모델 구축",
       "상호작용 분석 결과 저장 및 내역 기능 구현",
