@@ -3,13 +3,13 @@
  */
 
 const projectTags = {
-  Leader: { bg: "#212529", text: "#fff" },
-  Frontend: { bg: "#1971c2", text: "#e7f5ff" },
-  Backend: { bg: "#2b8a3e", text: "#ebfbee" },
-  AI: { bg: "#6741d9", text: "#f3f0ff" },
-  "UI/UX": { bg: "#c01c60", text: "#fff0f6" },
-  DB: { bg: "#f08c00", text: "#fff9db" },
-  IoT: { bg: "#364fc7", text: "#edf2ff" },
+  Leader: { bg: "#444B59", text: "#F8F9FA" },
+  Frontend: { bg: "#3E7AB4", text: "#EBF5FF" },
+  Backend: { bg: "#498E71", text: "#EBF7F1" },
+  AI: { bg: "#7E69C2", text: "#F3F0FF" },
+  "UI/UX": { bg: "#C25D7E", text: "#FFF0F5" },
+  DB: { bg: "#C98D3D", text: "#FFF9F2" },
+  IoT: { bg: "#5C6BC0", text: "#E8EAF6" },
 };
 
 export { projectTags };

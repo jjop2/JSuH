@@ -33,68 +33,68 @@ section {
 /* 라이트 모드 공통 색상 */
 :root[data-mode='light'] {
   --main-bg: #FFFFFF;
-  --main-text: #212529;
+  --main-text: #2D2E32;
   --sub-bg: #F8F9FA;
   --sub-text: #6C757D;
-  --inv-bg: #1E1E1E;
-  --inv-text: #E9ECEF;
+  --inv-bg: #2D2E32;
+  --inv-text: #F8F9FA;
 
-  --inv-bg-rgb: 30, 30, 30;
-  --inv-text-rgb: 233, 236, 239;
+  --inv-bg-rgb: 45, 46, 50;
+  --inv-text-rgb: 248, 249, 250;
 }
 
 /* 다크 모드 공통 색상 */
 :root[data-mode='dark'] {
-  --main-bg: #121212;
-  --main-text: #E9ECEF;
-  --sub-bg: #1E1E1E;
-  --sub-text: #ADB5BD;
-  --inv-bg: #2A2A2A;
+  --main-bg: #1A1C1E;
+  --main-text: #E2E2E2;
+  --sub-bg: #25282B;
+  --sub-text: #A0A0A0;
+  --inv-bg: #323539;
   --inv-text: #FFFFFF;
 
-  --inv-bg-rgb: 42, 42, 42;
+  --inv-bg-rgb: 50, 53, 57;
   --inv-text-rgb: 255, 255, 255;
 }
 
 /* 사계절 색상 */
 /* spring */
 :root[data-season='spring'][data-mode='light'] {
-  --main-color: #62bd6e; --main-rgb: 98, 189, 110;
-  --sub-color: #F2DADE;  --sub-rgb: 242, 218, 222;
+  --main-color: #5AAB66; --main-rgb: 120, 171, 130;
+  --sub-color: #F7E9EB;  --sub-rgb: 240, 226, 228;
 }
 :root[data-season='spring'][data-mode='dark'] {
-  --main-color: #81CF8B; --main-rgb: 129, 207, 139;
-  --sub-color: #473e41;  --sub-rgb: 61, 53, 55;
+  --main-color: #93C49D; --main-rgb: 147, 196, 157;
+  --sub-color: #3D3839;  --sub-rgb: 247, 233, 23;
 }
 
 /* summer */
 :root[data-season='summer'][data-mode='light'] {
-  --main-color: #4D96FF; --main-rgb: 77, 150, 255;
-  --sub-color: #F2EBCF;  --sub-rgb: 242, 235, 207;
+  --main-color: #6A96CF; --main-rgb: 106, 150, 207;
+  --sub-color: #EAE7D6;  --sub-rgb: 234, 231, 214;
 }
 :root[data-season='summer'][data-mode='dark'] {
-  --main-color: #6EB5FF; --main-rgb: 110, 181, 255;
-  --sub-color: #38362E;  --sub-rgb: 56, 54, 46;
+  --main-color: #8EAFD9; --main-rgb: 142, 175, 217;
+  --sub-color: #34332F;  --sub-rgb: 52, 51, 47;
 }
 
 /* autumn */
 :root[data-season='autumn'][data-mode='light'] {
-  --main-color: #D35400; --main-rgb: 211, 84, 0;
-  --sub-color: #E9DBC5;  --sub-rgb: 233, 219, 197;
+  --main-color: #BC6C25; --main-rgb: 188, 108, 37;
+  --sub-color: #E9E0D2;  --sub-rgb: 233, 224, 210;
 }
 :root[data-season='autumn'][data-mode='dark'] {
-  --main-color: #E67E22; --main-rgb: 230, 126, 34;
-  --sub-color: #3D3830;  --sub-rgb: 61, 56, 48;
+  --main-color: #DDA15E; --main-rgb: 221, 161, 94;
+  --sub-color: #36322D;  --sub-rgb: 54, 50, 45;
 }
 
 /* winter */
 :root[data-season='winter'][data-mode='light'] {
-  --main-color: #5D8BF4; --main-rgb: 93, 139, 244;
-  --sub-color: #A8BAC4;  --sub-rgb: 168, 186, 196;
+  --main-color: #6B8EAD; --main-rgb: 107, 142, 173;
+  --sub-color: #D6DBE0;  --sub-rgb: 214, 219, 224;
 }
 :root[data-season='winter'][data-mode='dark'] {
-  --main-color: #89A9F9; --main-rgb: 137, 169, 249;
-  --sub-color: #33393D;  --sub-rgb: 51, 57, 61;
+  --main-color: #8EB0CC; --main-rgb: 142, 176, 204;
+  --sub-color: #2D3236;  --sub-rgb: 45, 50, 54;
 }
 
 /* 폰트 설정 */
