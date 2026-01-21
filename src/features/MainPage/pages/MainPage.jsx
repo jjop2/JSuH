@@ -2,7 +2,7 @@ import About from '../components/About';
 import Skills from '../components/Skills';
 import { UITEXTS } from '../../../utils/uiTexts';
 import '../styles/MainPage.css'
-import Projects from '../components/Projects';
+import Projects from '../components/Projects/Projects';
 
 const MainPage = ({ lang, season }) => {
   const currentTexts = UITEXTS[lang];

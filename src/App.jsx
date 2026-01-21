@@ -6,7 +6,7 @@ import MainPage from './features/MainPage/pages/MainPage';
 function App() {
   const [lang, setLang] = useState('ko');
   const [mode, setMode] = useState('light');
-  const [season, setSeason] = useState('spring');
+  const [season, setSeason] = useState('winter');
 
   // 현재 시간, 날짜에 따라 setSeason 변경 추가
 

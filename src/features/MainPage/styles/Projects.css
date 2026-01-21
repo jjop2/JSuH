@@ -1,0 +1,109 @@
+.project_title {
+  display: flex;
+  justify-content: center;
+}
+
+.project_card {
+  background-color: var(--sub-bg);
+  border: 1px solid var(--inv-text);
+  overflow: hidden;
+  margin-bottom: 40px;
+  width: 1024px;
+}
+
+.project_info_section {
+  padding: 30px;
+  border-bottom: 1px solid var(--sub-text);
+}
+
+.project_name {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.project_date {
+  font-size: 14px;
+  color: var(--sub-text);
+  margin-bottom: 20px;
+}
+
+.project_tag_container {
+  display: flex;
+  gap: 5px;
+}
+
+.project_tag {
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.project_content_section {
+  display: flex;
+  min-height: 200px;
+}
+
+.project_detail_box {
+  flex: 1;
+  padding: 30px;
+}
+
+.project_detail_box h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.project_detail_box ul {
+  padding-left: 20px;
+}
+
+.project_detail_box li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  word-break: keep-all;
+}
+
+.project_achieve {
+  border-left: 1px solid var(--sub-text);
+}
+
+.project_link_section {
+  display: flex;
+  padding: 20px 30px;
+  gap: 20px;
+  border-top: 1px solid var(--sub-text);
+}
+
+.link_button {
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: 1.5px solid var(--main-text);
+  cursor: pointer;
+}
+
+.link_github {
+  background-color: var(--main-text);
+  color: var(--main-bg);
+}
+
+.link_github:hover {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+  transform: translateY(-2px);
+}
+
+.link_default {
+  background-color: transparent;
+  color: var(--main-text);
+}
+
+.link_default:hover {
+  background-color: rgba(var(--inv-bg-rgb), 0.05);
+  transform: translateY(-2px);
+}

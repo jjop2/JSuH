@@ -13,7 +13,7 @@ a {
 }
 
 .p-50 {
-  padding: 50px;
+  padding: 80px;
 }
 
 /* 라이트 모드 공통 색상 */
@@ -24,6 +24,8 @@ a {
   --sub-text: #6C757D;
   --inv-bg: #1E1E1E;
   --inv-text: #E9ECEF;
+
+  --inv-bg-rgb: 30, 30, 30;
 }
 
 /* 다크 모드 공통 색상 */
@@ -34,43 +36,49 @@ a {
   --sub-text: #ADB5BD;
   --inv-bg: #2A2A2A;
   --inv-text: #FFFFFF;
+
+  --inv-bg-rgb: 42, 42, 42;
 }
 
 /* 사계절 색상 */
+/* spring */
 :root[data-season='spring'][data-mode='light'] {
-  --main-color: #6BCB77;
-  --sub-color: #FFB7C5;
+  --main-color: #6BCB77; --main-rgb: 107, 203, 119;
+  --sub-color: #F2DADE;  --sub-rgb: 242, 218, 222;
 }
 :root[data-season='spring'][data-mode='dark'] {
-  --main-color: #81CF8B;
-  --sub-color: #FFCAD4;
+  --main-color: #81CF8B; --main-rgb: 129, 207, 139;
+  --sub-color: #3D3537;  --sub-rgb: 61, 53, 55;
 }
 
+/* summer */
 :root[data-season='summer'][data-mode='light'] {
-  --main-color: #4D96FF;
-  --sub-color: #FFD93D;
+  --main-color: #4D96FF; --main-rgb: 77, 150, 255;
+  --sub-color: #F2EBCF;  --sub-rgb: 242, 235, 207;
 }
 :root[data-season='summer'][data-mode='dark'] {
-  --main-color: #6EB5FF;
-  --sub-color: #FFE162;
+  --main-color: #6EB5FF; --main-rgb: 110, 181, 255;
+  --sub-color: #38362E;  --sub-rgb: 56, 54, 46;
 }
 
+/* autumn */
 :root[data-season='autumn'][data-mode='light'] {
-  --main-color: #D35400;
-  --sub-color: #F39C12;
+  --main-color: #D35400; --main-rgb: 211, 84, 0;
+  --sub-color: #E9DBC5;  --sub-rgb: 233, 219, 197;
 }
 :root[data-season='autumn'][data-mode='dark'] {
-  --main-color: #E67E22;
-  --sub-color: #F1C40F;
+  --main-color: #E67E22; --main-rgb: 230, 126, 34;
+  --sub-color: #3D3830;  --sub-rgb: 61, 56, 48;
 }
 
+/* winter */
 :root[data-season='winter'][data-mode='light'] {
-  --main-color: #5D8BF4;
-  --sub-color: #A8BAC4;
+  --main-color: #5D8BF4; --main-rgb: 93, 139, 244;
+  --sub-color: #A8BAC4;  --sub-rgb: 168, 186, 196;
 }
 :root[data-season='winter'][data-mode='dark'] {
-  --main-color: #89A9F9;
-  --sub-color: #CED4DA;
+  --main-color: #89A9F9; --main-rgb: 137, 169, 249;
+  --sub-color: #33393D;  --sub-rgb: 51, 57, 61;
 }
 
 /* 폰트 설정 */
