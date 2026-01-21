@@ -11,15 +11,15 @@ const MainPage = ({ lang, season }) => {
 
   return (
     <div className="main_page">
-      <div className="page_section about_section" id="about">
+      <section className="page_section about_section" id="about">
         <About season={season} />
-      </div>
-      <div className="page_section skills_section" id="skills">
+      </section>
+      <section className="page_section skills_section" id="skills">
         <Skills navList={navList} />
-      </div>
-      <div className="page_section projects_section" id="projects">
+      </section>
+      <section className="page_section projects_section" id="projects">
         <Projects navList={navList} />
-      </div>
+      </section>
     </div>
   );
 };

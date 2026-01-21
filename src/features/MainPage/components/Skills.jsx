@@ -12,9 +12,9 @@ const Skills = ({ navList }) => {
   ];
 
   return (
-    <div className="skill w-max p-50">
+    <div className="skill w-max section-p">
       <div className="skill_title">
-        <h1>{navList['skills']}</h1>
+        <h1 className="section_title">{navList['skills']}</h1>
       </div>
       <div className="skill_content">
         {skillData.map((skill, i) => (

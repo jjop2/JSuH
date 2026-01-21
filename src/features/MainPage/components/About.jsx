@@ -9,7 +9,7 @@ const EMAIL = "jngsuh616@gmail.com";
 const About = ({ season }) => {
   return (
     <div className="about w-max">
-      <div className="about_cont_wrap p-50">
+      <div className="about_cont_wrap section-p">
         <div className="about_title">
           <h4 className="title_block">안녕하세요,</h4>
           <h4 className="title_block">풀스택 & AI 개발자 장수현입니다</h4>
@@ -23,7 +23,7 @@ const About = ({ season }) => {
           <a
             href={GITHUB_URL}
             target='_blank'
-            className="contact_block"
+            className="contact_block github"
           >
             <FontAwesomeIcon icon={faGithub} /> {GITHUB_URL}
           </a>

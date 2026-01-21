@@ -1,6 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -8,12 +13,21 @@ a {
   color: inherit;
 }
 
+section {
+  scroll-margin-top: 60px;
+}
+
 .w-max {
   max-width: 1024px;
 }
 
-.p-50 {
-  padding: 80px;
+.section-p {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 11vh;
 }
 
 /* 라이트 모드 공통 색상 */
