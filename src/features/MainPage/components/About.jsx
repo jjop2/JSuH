@@ -3,6 +3,9 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+const GITHUB_URL = "https://github.com/jjop2";
+const EMAIL = "jngsuh616@gmail.com";
+
 const About = ({ season }) => {
   return (
     <div className="about w-max">
@@ -17,8 +20,14 @@ const About = ({ season }) => {
           <p className="desc_block">다양한 분야를 넘나들며 쌓아온 지식들은 저에게 사계절처럼 풍성한 자양분이 되었습니다. 단순히 코드를 짜는 것을 넘어, 누군가의 삶을 더 좋은 방향으로 바꾸는 실질적인 서비스를 구현하고자 합니다.</p>
         </div>
         <div className="about_contact">
-          <p className="contact_block"><FontAwesomeIcon icon={faGithub} /> 깃허브주소</p>
-          <p className="contact_block"><FontAwesomeIcon icon={faEnvelope} /> 이메일</p>
+          <a
+            href={GITHUB_URL}
+            target='_blank'
+            className="contact_block github"
+          >
+            <FontAwesomeIcon icon={faGithub} /> {GITHUB_URL}
+          </a>
+          <p className="contact_block"><FontAwesomeIcon icon={faEnvelope} /> {EMAIL}</p>
         </div>
       </div>
       <div className="about_pic_wrap">
