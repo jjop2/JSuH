@@ -8,7 +8,7 @@ const Skills = ({ navList }) => {
     { category: "Backend", items: "Flask, Spring Boot (JPA)" },
     { category: "Database", items: "MySQL" },
     { category: "AI", items: "YOLO, TensorFlow, Roboflow, OpenCV, Scikit-learn" },
-    { category: "DevOps & Tool", items: "AWS, Docker, Vercel, Git & Github, Notion, Figma" }
+    { category: "DevOps & Tool", items: "AWS, Docker, Vercel, Git & GitHub, Notion, Figma" }
   ];
 
   return (

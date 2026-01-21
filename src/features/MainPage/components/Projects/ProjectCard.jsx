@@ -63,7 +63,7 @@ const ProjectCard = ({ projectsData }) => {
         <div className="project_link_section">
           {isGithub && (
             <a href={isGithub} target='_blank' className="link_button link_github">
-              <FontAwesomeIcon icon={faGithub} /> Github
+              <FontAwesomeIcon icon={faGithub} /> GitHub
             </a>
           )}
           {isVideo && (
