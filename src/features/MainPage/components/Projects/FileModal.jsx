@@ -2,8 +2,10 @@ import { useState } from "react";
 import "../../styles/FileModal.css";
 
 const FileModal = ({ projectsData, index, setIsOpen }) => {
+  const projectFiles = projectsData[index].files; // 클릭한 프로젝트의 파일 목록
+
+  // 현재 보고 있는 사진 인덱스
   const [currentFileIdx, setCurrentFileIdx] = useState(0);
-  const projectFiles = projectsData[index].files;
 
   // 이전 사진 보기
   const prevFile = (e) => {

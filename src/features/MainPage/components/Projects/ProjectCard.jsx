@@ -8,6 +8,7 @@ import { useState } from 'react';
 
 const ProjectCard = ({ projectsData }) => {
   const [isOpen, setIsOpen] = useState(false);  // 파일 모달 open
+  const [clickedProject, setClickedProject] = useState(); // 클릭한 프로젝트의 인덱스
   
   const projectCard = (project, i) => {
     // 깃허브/영상/사진/gif 있으면 해당 객체, 없으면 false
@@ -74,24 +75,31 @@ const ProjectCard = ({ projectsData }) => {
           {isFile && (
             <p
               className="link_button link_default"
-              onClick={() => setIsOpen(false)} // true
+              onClick={(e) => {
+                setClickedProject(i);
+                setIsOpen(true);
+              }}
             >
               <FontAwesomeIcon icon={faImage} /> 사진 / GIF
             </p>
           )}
         </div>
-        {isOpen && (
-          <FileModal
-            projectsData={projectsData}
-            index={i}
-            setIsOpen={setIsOpen}
-          />
-        )}
       </div>
     )
   }
-
-  return projectsData.map((project, i) => projectCard(project, i));
+  
+  return (
+    <>
+    {projectsData.map((project, i) => projectCard(project, i))}
+    {isOpen && (
+      <FileModal
+        projectsData={projectsData}
+        index={clickedProject}
+        setIsOpen={setIsOpen}
+      />
+    )}
+    </>
+  );
 };
 
 export default ProjectCard;
