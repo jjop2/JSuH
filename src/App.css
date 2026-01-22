@@ -64,7 +64,7 @@ section {
 }
 :root[data-season='spring'][data-mode='dark'] {
   --main-color: #93C49D; --main-rgb: 147, 196, 157;
-  --sub-color: #3D3839;  --sub-rgb: 247, 233, 23;
+  --sub-color: #3D3839;  --sub-rgb: 61, 56, 57;
 }
 
 /* summer */

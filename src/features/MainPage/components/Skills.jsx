@@ -7,7 +7,7 @@ const Skills = ({ navList }) => {
     { category: "Frontend", items: "React, Vite, HTML/CSS, Redux, Axios" },
     { category: "Backend", items: "Flask, Spring Boot (JPA)" },
     { category: "Database", items: "MySQL" },
-    { category: "AI", items: "YOLO, TensorFlow, Roboflow, OpenCV, Scikit-learn" },
+    { category: "AI", items: "YOLO, TensorFlow, Scikit-learn, OpenCV, Roboflow" },
     { category: "DevOps & Tool", items: "AWS, Docker, Vercel, Git & GitHub, Notion, Figma" }
   ];
 

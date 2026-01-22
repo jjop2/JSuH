@@ -21,7 +21,7 @@ const projectsData = [
     ],
     achievements: [
       {
-        keyword: "모델 학습 최적화",
+        keyword: "렌더링 최적화",
         description: "React 메모이제이션 기법(useMemo 등)을 통해 프론트엔드의 불필요한 리렌더링 방지"
       },
       {
