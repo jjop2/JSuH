@@ -5,7 +5,7 @@
 }
 
 .about_section {
-  background: linear-gradient(to bottom, var(--main-bg), var(--sub-color) 150%);
+  background: linear-gradient(to bottom, var(--main-bg), var(--sub-color) 100%);
 }
 
 .skills_section {
@@ -18,5 +18,4 @@
 
 .section_title {
   font-size: 50px;
-  margin-bottom: 100px;
 }

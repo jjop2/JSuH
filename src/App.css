@@ -21,13 +21,10 @@ section {
   max-width: 1024px;
 }
 
-.section-p {
+.section-h {
   min-height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding-top: 11vh;
 }
 
 /* 라이트 모드 공통 색상 */

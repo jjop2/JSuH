@@ -6,12 +6,12 @@ import { useEffect, useState } from 'react';
 import Language from './Language';
 import Theme from './Theme';
 
-const Header = ({ lang='ko', setLang, setMode, setSeason }) => {
+const Header = ({ currentLang='ko', setCurrentLang, setCurrentMode, setCurrentSeason }) => {
   const [isLangOpen, setIsLangOpen] = useState(false);
   const [isThemeOpen, setIsThemeOpen] = useState(false);
   const [activeId, setActiveId] = useState("");
   
-  const currentTexts = UITEXTS[lang];
+  const currentTexts = UITEXTS[currentLang];
   const navList = currentTexts.nav;
   const themeList = currentTexts.theme;
   const sectionIds = Object.keys(navList);
@@ -34,7 +34,7 @@ const Header = ({ lang='ko', setLang, setMode, setSeason }) => {
     });
 
     return () => observer.disconnect();
-  }, [lang]);
+  }, [currentLang]);
 
   return (
     <header>

@@ -18,11 +18,6 @@ header {
 .home > a {
   font-size: 32px;
   font-weight: 800;
-}
-
-.home > a:hover {
-  font-size: 32px;
-  font-weight: 800;
   color: var(--main-color);
 }
 
@@ -75,9 +70,7 @@ header {
   cursor: pointer;
 }
 
-.main_nav a,
-.sub_nav p,
-.sub_nav_icon {
+.header_container {
   -webkit-user-select: none;
   user-select: none;
 }

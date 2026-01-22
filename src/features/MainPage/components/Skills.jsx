@@ -12,7 +12,7 @@ const Skills = ({ navList }) => {
   ];
 
   return (
-    <div className="skill w-max section-p">
+    <div className="skill w-max section-h">
       <div className="skill_title">
         <h1 className="section_title">{navList['skills']}</h1>
       </div>

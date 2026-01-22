@@ -1,11 +1,11 @@
 .about {
   display: flex;
-  gap: 60px;
+  padding: 0 30px;
+  gap: 80px;
 }
 
 .about_cont_wrap {
-  padding-top: 20vh;
-  align-items: start;
+  justify-content: center;
   color: var(--main-text);
 }
 
@@ -46,22 +46,30 @@
   color: var(--main-color);
 }
 
-.about_pic_wrap {
+.about_photo_wrap {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  min-width: 450px;
-
+  max-width: 400px;
+  max-height: calc(100vh - 60px);
   background: var(--inv-bg);
+  overflow: hidden;
 }
 
 .season_section {
+  flex-shrink: 0;
   padding: 30px 0;
   color: var(--sub-color);
   font-family: 'JetBrains Mono', monospace;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
-.picture_section {
+.photo_section {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex-grow: 1;
+  width: 100%;
   color: var(--inv-text);
 }

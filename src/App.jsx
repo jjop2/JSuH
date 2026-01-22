@@ -5,31 +5,31 @@ import MainPage from './features/MainPage/pages/MainPage';
 import Footer from './components/Footer/Footer';
 
 function App() {
-  const [lang, setLang] = useState('ko');
-  const [mode, setMode] = useState('light');
-  const [season, setSeason] = useState('winter');
+  const [currentLang, setCurrentLang] = useState('ko');
+  const [currentMode, setCurrentMode] = useState('light');
+  const [currentSeason, setCurrentSeason] = useState('winter');
 
   // 현재 시간, 날짜에 따라 setSeason 변경 추가
 
   useEffect(() => {
     const root = document.documentElement;
-    root.setAttribute('data-lang', lang);
-    root.setAttribute('data-mode', mode);
-    root.setAttribute('data-season', season);
-    root.setAttribute('lang', lang);
-  }, [lang, mode, season]);
+    root.setAttribute('data-lang', currentLang);
+    root.setAttribute('data-mode', currentMode);
+    root.setAttribute('data-season', currentSeason);
+    root.setAttribute('lang', currentLang);
+  }, [currentLang, currentMode, currentSeason]);
 
   return (
-    <div className={`language_${lang}`}>
+    <div className={`language_${currentLang}`}>
       <Header
-        lang={lang}
-        setLang={setLang}
-        setMode={setMode}
-        setSeason={setSeason}
+        currentLang={currentLang}
+        setCurrentLang={setCurrentLang}
+        setCurrentMode={setCurrentMode}
+        setSeason={setCurrentSeason}
       />
       <MainPage
-        lang={lang}
-        season={season}
+        currentLang={currentLang}
+        currentSeason={currentSeason}
       />
       <Footer />
       
