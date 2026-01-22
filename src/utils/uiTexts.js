@@ -11,7 +11,7 @@ const UITEXTS = {
       about: "소개",
       skills: "기술 스택",
       projects: "프로젝트",
-      certificates: "교육 · 자격"
+      // certificates: "교육 · 자격"
     },
     theme: {
       mode: "화면 모드",

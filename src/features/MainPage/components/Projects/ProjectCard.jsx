@@ -74,7 +74,7 @@ const ProjectCard = ({ projectsData }) => {
           {isFile && (
             <p
               className="link_button link_default"
-              onClick={() => setIsOpen(true)}
+              onClick={() => setIsOpen(false)} // true
             >
               <FontAwesomeIcon icon={faImage} /> 사진 / GIF
             </p>
